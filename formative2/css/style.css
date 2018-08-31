@@ -1,4 +1,6 @@
-/**/
+* {
+  box-sizing: border-box;
+}
 
 
 
@@ -40,52 +42,62 @@
 .mainGrid {
   grid-column: 1 / 12;
   grid-row: 2 / 9;
+  float: left;
 }
 
 .aboutGrid {
   grid-column: 6 / 12;
   grid-row: 20;
+  float: left;
 }
 
 .about-imageGrid {
   grid-column: 1 / 6;
   grid-row: 20;
+  float: left;
 }
 
 .foodGrid{
   grid-column: 1 / 6;
   grid-row: 21 / 30;
+  float: left;
 }
 
 .food-imageGrid{
   grid-column: 6 / 12;
   grid-row: 21 / 30;
+  float: left;
 }
 
 .beerGrid {
   grid-column: 1 / 6;
   grid-row: 31 / 40;
+  float: left;
 }
 
 .beer-imageGrid {
   grid-column: 6 / 12;
   grid-row: 31 / 40;
+  float: left;
 }
 
 .informationGrid {
-  grid-column: 1 / 6;
+  grid-column: 1 / 3;
   grid-row: 41 / 50;
+  float: left;
 }
 
 .information-imageGrid {
-  grid-column: 6 / 12;
+  grid-column: 3 / 12;
   grid-row: 41 / 50;
+  float: left;
 }
 
 
 #divGap {
   margin-left: 50px;
   margin-right: 50px;
+  float: left;
 }
 
 
@@ -110,6 +122,32 @@ li a{
  a:hover {
  	color: grey;
  }
+
+
+
+/* food menu */
+
+.btn {
+  display: block;
+  border: none;
+  background: white;
+}
+
+
+.menu {
+  position: absolute;
+  left: 350px;
+  top: 2400px;
+}
+
+
+
+
+
+
+
+
+
 
  .fixed_logo {
   position: fixed;
@@ -155,13 +193,17 @@ li a{
 #pmain {
   position: absolute;
   top: 800px;
-  left: 200px;
+  /*left: 200px;*/
   line-height: 50px;
   font-family: "arial";
   height: auto;
-  width: 75%;
-  display: block;
-  text-align: center
+  width: 100%;
+  padding: 0px 100px;
+  margin-left: 50px;
+  margin-right: 50px;
+  /*display: block;*/
+  /*margin: auto;*/
+  /*text-align: center;*/
   
 
 }
@@ -208,7 +250,7 @@ div > hr {
   }
 }
 
-@media screen and (max-width: 850px) {
+/*@media screen and (max-width: 850px) {
   .Grid {
     grid-template-areas: "navGrid"
                          "logoGrid"
@@ -222,7 +264,7 @@ div > hr {
                          "information-imageGrid"
                          "informationGrid";
         }
-}
+}*/
 
 @media screen and (max-width: 850px) {
   .Grid {
@@ -230,7 +272,20 @@ div > hr {
   }
 }
 
-@media screen and (max-width: 850px) {
-  .Grid {
-    grid-template-rows: auto;
-  }
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+    .column {
+        -ms-flex: 50%;
+        flex: 50%;
+        max-width: 50%;
+    }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .column {
+        -ms-flex: 100%;
+        flex: 100%;
+        max-width: 100%;
+    }
+}
