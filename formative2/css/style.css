@@ -1,6 +1,4 @@
-* {
-  box-sizing: border-box;
-}
+/**/
 
 
 
@@ -9,7 +7,7 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(12, 12));
   /*grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));*/
-  grid-gap: 40px;
+  grid-gap: 60px;
   grid-template-rows: minmax(auto, auto);
   
 }
@@ -155,11 +153,16 @@ li a{
 
 
 #pmain {
+  position: absolute;
+  top: 800px;
+  left: 200px;
   line-height: 50px;
   font-family: "arial";
   height: auto;
   width: 75%;
   display: block;
+  text-align: center
+  
 
 }
 
@@ -167,7 +170,7 @@ p {
   font-family: "arial";
   margin: 0 auto;
   height: auto;
-  width: 800px;
+  width: 600px;
   display: block;
 }
 
@@ -181,9 +184,9 @@ img {
 }
 
 .img-all {
-  padding: 50px;
-  width: 800px;
-  height: 700px;
+  padding: 100px 0px;
+  width: 650px;
+  height: 600px;
 }
 
 
@@ -206,7 +209,28 @@ div > hr {
 }
 
 @media screen and (max-width: 850px) {
-  .aboutGrid {
-    float: left;
+  .Grid {
+    grid-template-areas: "navGrid"
+                         "logoGrid"
+                         "mainGrid"
+                         "about-imageGrid"
+                         "aboutGrid"
+                         "food-imageGrid"
+                         "foodGrid"
+                         "beer-imageGrid"
+                         "beerGrid"
+                         "information-imageGrid"
+                         "informationGrid";
+        }
+}
+
+@media screen and (max-width: 850px) {
+  .Grid {
+    grid grid-template-columns: 100%;
   }
 }
+
+@media screen and (max-width: 850px) {
+  .Grid {
+    grid-template-rows: auto;
+  }
