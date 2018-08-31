@@ -1,0 +1,222 @@
+* {
+  box-sizing: border-box;
+}
+
+
+
+
+#Grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(12, 12));
+  /*grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));*/
+  grid-gap: 40px;
+  grid-template-rows: minmax(auto, auto);
+  
+}
+
+
+
+.logo {
+  position: fixed;
+  margin: 0 auto;
+  height: 170px;
+  width: 170px; 
+
+}
+
+.navGrid{ 
+  grid-column: 1 / 12;
+  grid-row: 1; 
+  height: 140px;
+  width: 100%;
+  padding-top: 0px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: white;
+  z-index: 20;
+
+}
+
+.navGrid li {
+  padding: 20px 20px;
+}
+
+.mainGrid {
+  grid-column: 1 / 12;
+  grid-row: 2 / 9;
+
+}
+
+.aboutGrid {
+  grid-column: 6 / 12;
+  grid-row: 20;
+}
+
+.about-imageGrid {
+  grid-column: 1 / 6;
+  grid-row: 20;
+  
+}
+.foodGrid{
+  grid-column: 1 / 6;
+  grid-row: 21 / 30;
+}
+
+.food-imageGrid{
+  grid-column: 6 / 12;
+  grid-row: 21 / 30;
+}
+.beerGrid {
+  grid-column: 1 / 6;
+  grid-row: 31 / 40;
+}
+
+.beer-imageGrid {
+  grid-column: 6 / 12;
+  grid-row: 31 / 40;
+}
+
+.informationGrid {
+  grid-column: 1 / 6;
+  grid-row: 41 / 50;
+}
+
+.information-imageGrid {
+  grid-column: 6 / 12;
+  grid-row: 41 / 50;
+}
+
+
+#divGap {
+  margin-left: 50px;
+  margin-right: 50px;
+
+}
+
+
+/* navigation */
+
+
+
+ul { 
+  font-family: "helvetica";
+  list-style: none;
+    }
+
+li {
+  float: right;
+}
+
+li a{ 
+  display: block;
+  padding:20px;
+ }
+
+ a:hover {
+ 	color: grey;
+ }
+
+ .fixed_logo {
+  position: fixed;
+  top: 0px;
+  left: 170px;
+  float: right;
+}
+
+ .fixed {
+  position: fixed;
+  /*right: 170px;*/
+  /*float: right;*/
+}
+
+{
+  z-index: 3;
+}
+
+}
+
+#overlay {
+  position: absolute;
+  width: 100%;
+  height: 600px;
+  z-index: 5;
+}
+
+
+.imgB1 { 
+  position:absolute; 
+  width: 100%;
+  height: 600px;
+  top: 145px; 
+  left: 0px; 
+  z-index: 1;
+} 
+
+.imgA1 { 
+  position:absolute; 
+  width: 70%;
+  height: 70%;
+  transform: translate(20%,0%);
+  z-index: 5;
+}
+
+
+
+
+
+#pmain {
+  line-height: 50px;
+  font-family: "arial";
+  height: auto;
+  width: 75%;
+  display: block;
+
+}
+
+p {
+  font-family: "arial";
+  margin: 0 auto;
+  height: auto;
+  width: 800px;
+  display: block;
+}
+
+img {
+  /*position: relative;*/
+  /*max-width: 100%;
+  height: auto;*/
+  margin: 0 auto;
+  display: block;
+
+}
+
+.img-all {
+  padding: 50px;
+  width: 800px;
+  height: 700px;
+}
+
+
+
+h2 {
+  margin: 0 auto;
+  padding: 30px;
+}
+
+div > hr {
+	width: 35px;
+}
+
+
+
+@media screen and (max-width: 850px) {
+  ul {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .aboutGrid {
+    float: left;
+  }
+}
