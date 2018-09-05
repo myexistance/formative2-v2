@@ -4,156 +4,179 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <title>formative2</title>
-    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="mainsass/css/main.css" type="text/css">
+     <script src="js/jquery-3.3.1.js"></script>
 
+    <script src="js/script.js"></script>
 
   </head>
   <body>
-    <div id="Grid">
-      <div class="navGrid fixed">
-        <div class="logoGrid fixed_logo">
-        <img class="logo" src="logo/logo_transparent.png">
+    <div class="header">
+      <div>
+        <img id="logo" src="logo/logo_transparent.png">
       </div>
-      <ul>
-          <li><a href="">INFORMATION</a></li>
-          <li><a href="">FOOD</a></li>
-          <li><a href="">BEER</a></li>
-          <li><a href="">ABOUT</a></li>
-      </ul>
+      <div class="nav_container">
+       <ul>
+          <li class="button"><button id="about"><h4>ABOUT</h4></button></li>
+          <li class="button"><button  id="food"><h4>FOOD</h4></button></li>
+          <li class="button"><button id="beer"><h4>BEER</h4></button></li>
+          <li class="button"><button id="information"><h4>INFORMATION</h4></button></li>
+       </ul>
       </div>
-    <div class="mainGrid">
-    
-    <img class="imgA1" src="logo/logo_transparent.png">
+    </div> 
+    <div>   
     <img id="overlay" class="imgB1" src="image/main.jpg"> 
+    <img class="imgA1" src="logo/logo_transparent.png">
+    </div>
+    <div>
+      <h4 class="para">Premium beer and quality food are literally made for each other, so we created the Fork & Brewer as an ideal venue to showcase both.
+
+      With forty beer taps, a top-flight kitchen crew, friendly staff and a brewery on the premises, our mission is to take Wellingtons already awesome beer culture to an entire other level.
+
+      You can find us upstairs at 14 Bond Street in central Wellington.
+      </h4>
+    </div>
+    <!-- Section About -->
+    <div class="about">
+      <div class="col1">
+        <img id="img-about" src="image/abouti.jpg" alt="beerimage">
+      </div>
+      <div class="col2"> 
+      <h2 id="heading-about"> About </h2>
+      <p class="para-about"> Wellington's Fork & Brewer brewpub was delighted to announce Kelly Ryan as our new brewer in mid 2014. Ryan is a talented and highly regarded brewer with experience working around New Zealand and the United Kingdom. His beers and ciders have won multiple awards at major beer shows. He's even been called a "bit of a brewing rock star." 
+
+      A big fan of the brewpub concept where beer is made right on the premises, Ryan says he is excited to be making beer in the heart of Wellington, looking forward to producing beers which get customers excited, and pleased to working with people as passionate about craft beer as he is. Despite his youthful good looks, 
+
+      Director Colin Mallon says the Fork & Brewer team are proud to have been able to attract a brewer of Ryan's calibre. "Kelly is an outstanding brewer and we are thrilled to have him on board. He will bring expertise, experience and creativity to our 1,000 litre on-site micro-brewery. An in-house brewery means our beers only travel metres from tank to tap. This is a key feature of the Fork & Brewer as a craft beer 
+        </p>
+      </div>
+    </div>
+    <!-- Section food -->
+
+    <div class="food"> <!-- <-problem with clearing -->
+      <div class="col1">
+        <h2 id="heading-food"> FOOD </h2>
+      <p class="para-food"> Wellington's Fork & Brewer brewpub was delighted to announce Kelly Ryan as our new brewer in mid 2014. Ryan is a talented and highly regarded brewer with experience working around New Zealand and the United Kingdom. His beers and ciders have won multiple awards at major beer shows. He's even been called a "bit of a brewing rock star." 
+
+      A big fan of the brewpub concept where beer is made right on the premises, Ryan says he is excited to be making beer in the heart of Wellington, looking forward to producing beers which get customers excited, and pleased to working with people as passionate about craft beer as he is. 
+
+      Director Colin Mallon says the Fork & Brewer team are proud to have been able to attract a brewer of Ryan's calibre. "Kelly is an outstanding brewer and we are thrilled to have him on board. He will bring expertise, experience and creativity to our 1,000 litre on-site micro-brewery. An in-house brewery means our beers only travel metres from tank to tap. This is a key feature of the Fork & Brewer as a craft beer 
+        </p><br>
+        <div class="foodmenu">
+	       <ul>
+	          <li><button><h4>Main Menu</h4></button></li></br>
+	          <li><button><h4>Kids Menu</h4></button></li></br>
+	          <li><button><h4>Desserts</h4></button></li>
+	       </ul>
+        </div>
+      </div>
+      
+        
+      
+      <div class="col2 col2-food"> 
+        <img id="img-food" src="image/6.jpg" alt="">
+      </div>
+
+      <!-- Section beer -->
+      <div class="beer">
+      <div class="col1">
+      <h2 id="heading-beer"> FORK BREWING TAPS </h2>
+        <p class="para-beer"> 
+        Fork Brewing / Odell Brewing Colorado Colourado, 6.5% abv</br>
+        Fork Brewing and Burning Sky Ls Amis Due Brassage, 6.2% abv</br>
+        Fork Brewing Base Isolator APA, 6.1% abv</br>
+        Fork Brewing Base Jumper, 6.1% abv</br>
+        Fork Brewing BE High, 5.2% abv</br>
+        Fork Brewing BE Low, 5% abv</br>
+        Fork Brewing Big Tahuna, 6.7% abv</br>
+        Fork Brewing Bohemian Hipster, 5% abv</br>
+        Fork Brewing Burton Ernie Nitro, 6.7% abv</br>
+        Fork Brewing Cherry 2000, 5% abv</br>
+        Fork Brewing Chockabock, 6.8% abv</br>
+        Fork Brewing Daily Bread, 5% abv</br>
+        Fork Brewing Florapalooza, 7.3% abv</br>
+        Fork Brewing Galactic Gose, 4.5% abv</br>
+        Fork Brewing Godzone Beat, 6% abv</br>
+        Fork Brewing Gold Medal Famous, 4.9% abv</br>
+        Fork Brewing Golden Mile, 4.5% abv</br>
+        Fork Brewing Hardpour Corn, 4.5% abv</br>
+        Fork Brewing I.P.YAY, 7% abv</br>
+        Fork Brewing Lemming Drop, 5.2% abv</br>
+        Fork Brewing Long Wheat Cloud, 5.3% abv</br>
+        Fork Brewing Low Blow, 4.4% abv</br>
+        Fork Brewing Ma is White, 5.4% abv</br>
+        Fork Brewing Miso Stout, 4.2% abv</br>
+        Fork Brewing Murder of Crows, 9.8% abv</br>
+        Fork Brewing Pitch Fork, 5.5% abv </br>
+        </p>
+      </div>
+
+      <div class="col2"> 
+      <h2 id="heading-beer"> IN THE FRIDGE </h2>
+        <p class="para-beer"> 
+        Fork Brewing / Odell Brewing Colorado Colourado, 6.5% abv</br>
+        Fork Brewing and Burning Sky Ls Amis Due Brassage, 6.2% abv</br>
+        Fork Brewing Base Isolator APA, 6.1% abv</br>
+        Fork Brewing Base Jumper, 6.1% abv</br>
+        Fork Brewing BE High, 5.2% abv</br>
+        Fork Brewing BE Low, 5% abv</br>
+        Fork Brewing Big Tahuna, 6.7% abv</br>
+        Fork Brewing Bohemian Hipster, 5% abv</br>
+        Fork Brewing Burton Ernie Nitro, 6.7% abv</br>
+        Fork Brewing Cherry 2000, 5% abv</br>
+        Fork Brewing Chockabock, 6.8% abv</br>
+        Fork Brewing Daily Bread, 5% abv</br>
+        Fork Brewing Florapalooza, 7.3% abv</br>
+        Fork Brewing Galactic Gose, 4.5% abv</br>
+        Fork Brewing Godzone Beat, 6% abv</br>
+        Fork Brewing Gold Medal Famous, 4.9% abv</br>
+        Fork Brewing Golden Mile, 4.5% abv</br>
+        Fork Brewing Hardpour Corn, 4.5% abv</br>
+        Fork Brewing I.P.YAY, 7% abv</br>
+        Fork Brewing Lemming Drop, 5.2% abv</br>
+        Fork Brewing Long Wheat Cloud, 5.3% abv</br>
+        Fork Brewing Low Blow, 4.4% abv</br>
+        Fork Brewing Ma is White, 5.4% abv</br>
+        Fork Brewing Miso Stout, 4.2% abv</br>
+        Fork Brewing Murder of Crows, 9.8% abv</br>
+        Fork Brewing Pitch Fork, 5.5% abv </br>
+        
+        </p>
+      </div>
+      </div>
+      <div class="information">
+      <div class="col1">
+        <img id="img-information" src="image/map.jpg" alt="beerimage">
+      </div>
+      <div class="col2"> 
+      <h2 id="heading-information"> Information </h2>
+      <p class="para-information">
+        <b>Contacts</b><br/>
+		Phone (04) 472 0033<br/>
+		Email info@forkandbrewer.co.nz<br/><br/><br/>
+
+
+
+
+      	<b>OPENING HOURS</b><br/>
+		Mon - Wed 11:30am - Late<br/>
+		Thu	11:30am - Late<br/>
+		Fri	11:30am - Late<br/>
+		Sat	11:30am - Late<br/>
+		Sun	Closed<br/><br/><br/></p>
+      </div>
+    </div>
+    <div>
+    	<hr>
+    	<!-- <img src="image/instagram_icon.jpg"> -->
+    	<p class="align"> © 2018 Hanjan, Inc. All rights reserved </p>
+    </div>
+
+
+
+
+      
     
-
-
-             <p id="pmain">Premium beer and quality food are literally made for each other, so we created the Fork and Brewer as an ideal venue to showcase both.
-
-With forty beer taps, a top-flight kitchen crew, friendly staff and a brewery on the premises, our mission is to take Wellingtons already awesome beer culture to an entire other level.
-
-You can find us upstairs at 14 Bond Street in central Wellington.
-             </p>
-    </div>
-    <br/><br/>
-        <div class="about-imageGrid">
-          
-            <img class="img-all" src="image/abouti.jpg">
-        </div>
-       
-        <div id="divGap" class="aboutGrid">
-        <h2>ABOUT</h2><hr>
-            <p>Wellington's Fork & Brewer brewpub was delighted to announce Kelly Ryan as our new brewer in mid 2014. Ryan is a talented and highly regarded brewer with experience working around New Zealand and the United Kingdom. His beers and ciders have won multiple awards at major beer shows. He's even been called a "bit of a brewing rock star." <br/><br/>
-
-A big fan of the brewpub concept where beer is made right on the premises, Ryan says he is excited to be making beer in the heart of Wellington, looking forward to producing beers which get customers excited, and pleased to working with people as passionate about craft beer as he is. Despite his youthful good looks, Kelly has a distinguished brewing history with stints at Tui/DB, Fyne Ales (UK), Thornbridge (UK), Epic Brewing Company and the Good George brewpub in Hamilton. <br/><br/>
-
-Ryan says he loves Wellington and the Wellington beer scene because "it's where it is all happening." His first challenge will be keeping up the quality of the existing Fork beers such as Base Jumper APA and Bohemian Hipster Pilsner while also introducing his own recipes and creations. Ryan wants to make beers which create a bit of a buzz."<br/><br/>
-
-Director Colin Mallon says the Fork & Brewer team are proud to have been able to attract a brewer of Ryan's calibre. "Kelly is an outstanding brewer and we are thrilled to have him on board. He will bring expertise, experience and creativity to our 1,000 litre on-site micro-brewery. An in-house brewery means our beers only travel metres from tank to tap. This is a key feature of the Fork & Brewer as a craft beer destination."<br/><br/>
-            </p>
-        </div>
-
-        <div id="divGap" class="food-imageGrid">
-            <br/><br/>
-            <img class="img-all" src="image/2.jpg">
-        </div>
-        
-        <div id="divGap" class="foodGrid">
-          <h2>FOOD</h2><hr>
-            <p>ALL OUR REGULAR DISHES HAVE BEEN CAREFULLY MATCHED TO ONE OF OUR TAP CRAFT BEERS.
-The art of beer and food matching is to pair excellent food and outstanding beer to create a combination greater than the sum of the individual parts. This can involve complimentary flavours, contrasting flavours, cut, cleansing and just a hint of alchemy.
-
-The matches were developed by top beer writer Neil Miller and worked through with Chef. So far, the responses from customers and reviewers have been overwhelmingly positive but these things are always very much a matter of taste.
-
-The Fork & Brewer takes beer and food so seriously we made it our name.
-            </p>
-            <div class="menu">
-              <button class="btn"><h3>main menu</h3></button>
-              <button class="btn"><h3>kids menu</h3></button>
-              <button class="btn"><h3>desserts</h3></button>
-            </div>
-        </div>
-
-        <div id="divGap" class="beer-imageGrid">
-          <br/><br/><br/><br/><br/><h3>IN THE FRIDGE</h3><p>
-8 Wired Batch 2.18, 11% abv<br/>
-8 Wired Sour Poppy, 7% abv<br/>
-Behemoth Triple Chocolate, 6.5% abv<br/>
-Chimay Blanche (White) / Cinq Cents, 8% abv<br/>
-Chimay Rouge (Red) / Première, 7% abv<br/>
-Choice Bros Reet Petite, 6% abv<br/>
-Coopers Vintage Ale 2012, 7.5% abv<br/>
-Croucher Low Rider, 2.5% abv<br/>
-Epic Armageddon, 6.66% abv<br/>
-Fork Brewing Godzone Beat, 6% abv<br/>
-Hallertau Funkonnay 2013, 6.5% abv<br/>
-Liberty C!tra, 9% abv<br/>
-Moa St. Joseph, 9.5% abv<br/>
-Mussel Inn Captain Cooker Manuka Beer, 4% abv<br/>
-Orval, 6.2% abv<br/>
-Rodenbach Grand Cru, 6.5% abv<br/>
-Schneider Weisse, 5.4% abv<br/>
-Scott's Gluten Free Pale Ale, 4.5% abv<br/>
-Tuatara Iti APA, 3.3% abv<br/>
-Yeastie Boys Gunnamatta, 6.66% abv<br/>
-</p>
-        </div>
-        <div id="divGap" class="beerGrid">
-          <h2>BEER</h2><hr>
-            <br/>
-          <h3>FORK BREWING TAPS</h3>
-            <p>
-             Fork Brewing / Odell Brewing Colorado Colourado, 6.5% abv<br/>
-             Fork Brewing Alternative, 5.8% abv<br/>
-             Fork Brewing Base Jumper, 6.1% abv<br/>
-             Fork Brewing Black Star Rating BIPA, 6.2% abv<br/>
-             Fork Brewing Bohemian Hipster, 5% abv<br/>
-             Fork Brewing Burton Ernie, 6.3% abv<br/>
-             Fork Brewing Cherry 2000, 5% abv<br/>
-             Fork Brewing Colorado Colorado, 5.1% abv<br/>
-             Fork Brewing Cone'n the Bavarian, 5% abv<br/>
-             Fork Brewing Galactic Gose, 4.5% abv<br/>
-             Fork Brewing Game of Cones, 8.1% abv<br/>
-             Fork Brewing Godzone Beat, 6% abv<br/>
-             Fork Brewing Gold Medal Famous, 4.9% abv<br/>
-             Fork Brewing Jelly Antipodean, 6.7% abv<br/>
-             Fork Brewing Long Wheat Cloud, 5.3% abv<br/>
-             Fork Brewing Low Blow, 4.4% abv<br/>
-             Fork Brewing Parallel Importer, 4.8% abv<br/>
-             Fork Brewing Pitch Fork, 5.5% abv<br/>
-             Fork Brewing Puns N Goses, 3.6% abv<br/>
-             Fork Brewing Shadow Majestic, 4% abv<br/>
-             Fork Brewing Shadow Majestic NITRO Edition, 4% abv<br/>
-             Fork Brewing Slip Pils, 5.2% abv<br/>
-             Fork Brewing Sourbet - Raspberry & Lemon Berliner, 3.7% abv<br/>
-             Fork Brewing Tainted Love, 6% abv<br/>
-             Fork Brewing Welterweight, 5.5% abv<br/>
-             Fork Brewing Yoghurt & Bruesli, 8% abv<br/>
-             Fork Brewing Zeus Juice, 6.5% abv<br/>
-             Fork Brewing Parallel Importer, 4.8% abv (Handpulled)<br/>
-
-            </p>
-            
-        </div>
-
-        <div id="divGap" class="information-imageGrid">
-          <br/><br/>
-          <img class="img-all"src="image/map.jpg">
-        </div>
-        <div id="divGap" class="informationGrid">
-            <h2>INFORMATION</h2><hr>
-            <h4>Contacts</h4><p>Phone (04) 472 0033<br/>Email info@forkandbrewer.co.nz
-            <h4>Opening Hours</h4>
-            <p>
-              Mon - Wed&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&emsp;&nbsp;&nbsp;&nbsp;&nbsp;11:30am - Late<br/>
-              Thu&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;11:30am - Late<br/>
-              Fri&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;11:30am - Late<br/>
-              Sat&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;11:30am - Late<br/>
-              Sun&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Closed<br/>
-            </p>
-        </div>
-        
-    </div>
 
   </body>
 </html>
